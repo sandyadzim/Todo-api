@@ -16,5 +16,5 @@ app.group('/api', (router) => {
     router.put('/todo/:id', TodoController.updateTodo)
     router.delete('/todo/:id', TodoController.deleteTodo)
 })
-app.listen(port, () => console.log('Listening o Port ${2500}'))
-// app.listen(process.env.PORT||4000, () => console.log(`Listening o Port ${4000}`))
+// app.listen(port, () => console.log('Listening o Port ${2500}'))
+app.listen(process.env.PORT||2500, () => console.log(`Listening o Port ${2500}`))
